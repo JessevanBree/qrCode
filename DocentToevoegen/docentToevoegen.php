@@ -81,9 +81,9 @@
     </form>
 
 <?php
-if (isset($_POST["naamDocent"]) && ($_POST["naamDocent"]) && ($_POST["leeftijd"]) && /*($_POST["lesVak"]) && */ ($_POST["opleiding"]) && /*($_POST["favvak"]) && */ ($_POST["beschrijving"])){
+if (isset($_POST["naamDocent"]) && ($_POST["leeftijd"]) && ($_POST["leeftijd"]) && /*($_POST["lesVak"]) && */ ($_POST["opleiding"]) && /*($_POST["favvak"]) && */ ($_POST["beschrijving"])){
+    $sqlDocentToevoegen = "INSERT INTO docenten (docentid, Naam, Opleiding, Beschrijving, Leeftijd, Afbeeldingspad) VALUES (DEFAULT, '".$_POST["naamDocent"]."', '".$_POST["opleiding"]."', '".$_POST["beschrijving"]."', '".$_POST["leeftijd"]."', '')";
 
-    $sqlDocentToevoegen = "INSERT INTO docenten (docentid, Naam, Opleiding, Beschrijving, leeftijd, afbeeldingspad) VALUES (DEFAULT, '".$_POST["naamDocent"]."', '".$_POST["opleiding"]."', '".$_POST["beschrijving"]."', '".$_POST["leeftijd"]."', '".$_POST["leeftijd"]."', '')";
     mysqli_query($connectie, $sqlDocentToevoegen);
     //header("Refresh:0");
     // , $_POST["lesVak"], $_POST["favvak"]
