@@ -1,2 +1,0 @@
-# qrCode
-Opdracht qrCode
