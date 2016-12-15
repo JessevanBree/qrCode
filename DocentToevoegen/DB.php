@@ -3,7 +3,7 @@
 $Host = "localhost";
 $Pass = "usbw";
 $Username = "root";
-$DBName = "openavond";
+$DBName = "qrcode";
 
 $connectie = mysqli_connect("$Host", "$Username", "$Pass", "$DBName");
 
