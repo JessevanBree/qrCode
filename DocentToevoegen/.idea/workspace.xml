@@ -38,14 +38,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="docentToevoegen.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="docentToevoegen.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docentToevoegen.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
+            <state relative-caret-position="102">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
-                <marker date="1481812438836" expanded="true" signature="1834:1866" ph="SELECT vakna... datum" />
-                <marker date="1481812438836" expanded="true" signature="2949:2981" ph="SELECT vakid... vakken" />
+                <marker date="1481906832721" expanded="true" signature="1663:1695" ph="SELECT vakid... vakken" />
+                <marker date="1481906832721" expanded="true" signature="2582:2614" ph="SELECT vakid... vakken" />
+                <marker date="1481906832721" expanded="true" signature="3723:3943" ph="INSERT INTO docenten... " />
               </folding>
             </state>
           </provider>
@@ -56,11 +57,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1481792801255" expanded="true" signature="1392:1415" ph="..." />
-                <marker date="1481792801255" expanded="true" signature="1416:1526" ph="..." />
-                <marker date="1481792801255" expanded="false" signature="1490:1515" ph="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,34 +65,9 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
+            <state relative-caret-position="884">
               <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin_pannel.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Uren_boeken Jesse, Paul/admin_pannel.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UrenBoeker.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../Uren_boeken Jesse, Paul/UrenBoeker.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-951">
-              <caret line="79" column="142" selection-start-line="79" selection-start-column="67" selection-end-line="79" selection-end-column="142" />
-              <folding>
-                <marker date="1480441355551" expanded="true" signature="2059:2086" ph="SELECT Vak_N... vakken" />
-                <marker date="1480441355551" expanded="true" signature="4572:4599" ph="SELECT Vak_N... vakken" />
-                <marker date="1480441355551" expanded="true" signature="5678:5942" ph="INSERT INTO uboeken... " />
-                <marker date="1480441355551" expanded="true" signature="6295:6429" ph="SELECT inlog... uboeken" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -103,28 +75,8 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="76670">
               <caret line="4510" column="15" selection-start-line="4510" selection-start-column="15" selection-end-line="4510" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style2.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Koen/style2.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Koen/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
-              <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -157,10 +109,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="39" />
-    <option name="width" value="1604" />
-    <option name="height" value="876" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -173,7 +125,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -186,16 +138,10 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/git-cmd.exe" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -265,21 +211,21 @@
       <workItem from="1481619825146" duration="8421000" />
       <workItem from="1481711563280" duration="4263000" />
       <workItem from="1481791322196" duration="3689000" />
+      <workItem from="1481906891763" duration="221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31001000" />
+    <option name="totallyTimeSpent" value="31222000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="39" width="1604" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52255636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5025" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767624" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -292,6 +238,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32767624" sideWeight="0.4975" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
@@ -338,8 +285,45 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481812438836" expanded="true" signature="1834:1866" ph="SELECT vakna... datum" />
-            <marker date="1481812438836" expanded="true" signature="2949:2981" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="1663:1695" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="2582:2614" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="3723:3943" ph="INSERT INTO docenten... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FotoUp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76670">
+          <caret line="4510" column="15" selection-start-line="4510" selection-start-column="15" selection-end-line="4510" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docentToevoegen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1481906832721" expanded="true" signature="1663:1695" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="2582:2614" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="3723:3943" ph="INSERT INTO docenten... " />
           </folding>
         </state>
       </provider>
@@ -349,8 +333,9 @@
         <state relative-caret-position="986">
           <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="62" selection-end-column="14" />
           <folding>
-            <marker date="1481812438836" expanded="true" signature="1834:1866" ph="SELECT vakna... datum" />
-            <marker date="1481812438836" expanded="true" signature="2949:2981" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="1663:1695" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="2582:2614" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="3723:3943" ph="INSERT INTO docenten... " />
           </folding>
         </state>
       </provider>
@@ -363,27 +348,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Koen/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Koen/admin page koen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Koen/docent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Koen/index.php" />
+    <entry file="file://$PROJECT_DIR$/../Koen/admin page koen.php" />
+    <entry file="file://$PROJECT_DIR$/../Koen/docent.php" />
     <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72573">
@@ -392,22 +359,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Koen/style2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Koen/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Koen/style2.css" />
+    <entry file="file://$PROJECT_DIR$/../Koen/style.css" />
     <entry file="file://$PROJECT_DIR$/DB.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -420,26 +373,15 @@
         <state relative-caret-position="1037">
           <caret line="61" column="83" selection-start-line="61" selection-start-column="83" selection-end-line="61" selection-end-column="83" />
           <folding>
-            <marker date="1481812438836" expanded="true" signature="1834:1866" ph="SELECT vakna... datum" />
-            <marker date="1481812438836" expanded="true" signature="2949:2981" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="1663:1695" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="2582:2614" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="3723:3943" ph="INSERT INTO docenten... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Koen/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Koen/admin page koen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Koen/index.php" />
+    <entry file="file://$PROJECT_DIR$/../Koen/admin page koen.php" />
     <entry file="file://$PROJECT_DIR$/../Koen/docent 2.0 koen.php" />
     <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -476,20 +418,21 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481812438836" expanded="true" signature="1834:1866" ph="SELECT vakna... datum" />
-            <marker date="1481812438836" expanded="true" signature="2949:2981" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="1663:1695" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="2582:2614" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="3723:3943" ph="INSERT INTO docenten... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Nahui/docent 2.0 koen.php" />
@@ -509,61 +452,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Koen/docent 2.0 koen.php" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f99730e7-7242-4fd8-8616-64831af3aeda/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="24" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Koen/admin page koen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Koen/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Koen/docent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Koen/style2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Koen/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Uren_boeken Jesse, Paul/admin_pannel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f99730e7-7242-4fd8-8616-64831af3aeda/console.sql" />
+    <entry file="file://$PROJECT_DIR$/../Koen/admin page koen.php" />
+    <entry file="file://$PROJECT_DIR$/../Koen/index.php" />
+    <entry file="file://$PROJECT_DIR$/../Koen/docent.php" />
+    <entry file="file://$PROJECT_DIR$/../Koen/style2.css" />
+    <entry file="file://$PROJECT_DIR$/../Koen/style.css" />
+    <entry file="file://$PROJECT_DIR$/../Uren_boeken Jesse, Paul/admin_pannel.html" />
     <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="76670">
           <caret line="4510" column="15" selection-start-line="4510" selection-start-column="15" selection-end-line="4510" selection-end-column="15" />
           <folding />
         </state>
@@ -573,17 +471,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1481792801255" expanded="true" signature="1392:1415" ph="..." />
-            <marker date="1481792801255" expanded="true" signature="1416:1526" ph="..." />
-            <marker date="1481792801255" expanded="false" signature="1490:1515" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
+        <state relative-caret-position="884">
           <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
           <folding />
         </state>
@@ -591,28 +485,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docentToevoegen.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
+        <state relative-caret-position="102">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <marker date="1481812438836" expanded="true" signature="1834:1866" ph="SELECT vakna... datum" />
-            <marker date="1481812438836" expanded="true" signature="2949:2981" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="1663:1695" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="2582:2614" ph="SELECT vakid... vakken" />
+            <marker date="1481906832721" expanded="true" signature="3723:3943" ph="INSERT INTO docenten... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Uren_boeken Jesse, Paul/UrenBoeker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-951">
-          <caret line="79" column="142" selection-start-line="79" selection-start-column="67" selection-end-line="79" selection-end-column="142" />
-          <folding>
-            <marker date="1480441355551" expanded="true" signature="2059:2086" ph="SELECT Vak_N... vakken" />
-            <marker date="1480441355551" expanded="true" signature="4572:4599" ph="SELECT Vak_N... vakken" />
-            <marker date="1480441355551" expanded="true" signature="5678:5942" ph="INSERT INTO uboeken... " />
-            <marker date="1480441355551" expanded="true" signature="6295:6429" ph="SELECT inlog... uboeken" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Uren_boeken Jesse, Paul/UrenBoeker.php" />
   </component>
   <component name="masterDetails">
     <states>
