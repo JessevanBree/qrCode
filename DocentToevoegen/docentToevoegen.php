@@ -31,49 +31,49 @@
     <form action="" method="post">
         <div class="col-md-3 col-md-offset-1">
             <label for="Naam Docent">Naam Docent:</label>
-            <input type="text" name="naamDocent" placeholder="Naam Docent" class="form-control" value="<?php echo isset($_POST['naamDocent']) ? $_POST['naamDocent'] : '' ?>">
+                <input type="text" name="naamDocent" placeholder="Naam Docent" class="form-control" value="<?php echo isset($_POST['naamDocent']) ? $_POST['naamDocent'] : '' ?>">
             <label for="Leeftijd">Leeftijd:</label>
-            <input type="number" name="leeftijd" placeholder="Leeftijd" class="form-control" value="<?php echo isset($_POST['leeftijd']) ? $_POST['leeftijd'] : '' ?>">
+                <input type="number" name="leeftijd" placeholder="Leeftijd" class="form-control" min="0" max="99" value="<?php echo isset($_POST['leeftijd']) ? $_POST['leeftijd'] : '' ?>">
             <label for="vak">Lesvak:</label>
-            <select class="form-control" name="lesVak">
-                <?php
-                //Maakt een query om de vakken op te halen
-                $sqliLesVak = "SELECT vakid,vaknaam FROM vakken";
-                $sqliLesVakUitkomst = mysqli_query($connectie, $sqliLesVak);
+                <select class="form-control" name="lesVak">
+                    <?php
+                    //Maakt een query om de vakken op te halen
+                    $sqliLesVak = "SELECT vakid,vaknaam FROM vakken";
+                    $sqliLesVakUitkomst = mysqli_query($connectie, $sqliLesVak);
 
-                echo "<option value='0'>Lesvak</option>";
+                    echo "<option value='0'>Lesvak</option>";
 
-                while($row = mysqli_fetch_array($sqliLesVakUitkomst)){
-                    echo "<option value='" . $row["vakid"] . "'>" . $row["vaknaam"] . "</option>";
-                }
-                ?>
-            </select>
+                    while($row = mysqli_fetch_array($sqliLesVakUitkomst)){
+                        echo "<option value='" . $row["vakid"] . "'>" . $row["vaknaam"] . "</option>";
+                    }
+                    ?>
+                </select>
         </div>
 
         <div class="col-md-3">
             <label for="Opleiding">Opleiding:</label>
-            <input type="text" name="opleiding" placeholder="Opleiding" class="form-control" value="<?php echo isset($_POST['opleiding']) ? $_POST['opleiding'] : '' ?>" >
+                <input type="text" name="opleiding" placeholder="Opleiding" class="form-control" value="<?php echo isset($_POST['opleiding']) ? $_POST['opleiding'] : '' ?>" >
             <label for="Favoriete vak">Favoriete vak:</label>
-            <select class="form-control" name="favvak">
-                <?php
-                //Maakt een query om de vakken op te halen uit de database
-                $sqliFavVak = "SELECT vakid,vaknaam FROM vakken";
-                $sqliFavVakUitkomst = mysqli_query($connectie, $sqliFavVak);
+                <select class="form-control" name="favvak">
+                    <?php
+                    //Maakt een query om de vakken op te halen uit de database
+                    $sqliFavVak = "SELECT vakid,vaknaam FROM vakken";
+                    $sqliFavVakUitkomst = mysqli_query($connectie, $sqliFavVak);
 
-                echo "<option value='0'>Favoriete vak</option>";
+                    echo "<option value='0'>Favoriete vak</option>";
 
-                while($row = mysqli_fetch_array($sqliFavVakUitkomst)){
-                    echo "<option value='" . $row["vakid"] . "'>" . $row["vaknaam"] . "</option>";
-                }
-                ?>
-            </select>
+                    while($row = mysqli_fetch_array($sqliFavVakUitkomst)){
+                        echo "<option value='" . $row["vakid"] . "'>" . $row["vaknaam"] . "</option>";
+                    }
+                    ?>
+                </select>
             <label for="Beschrijving">Beschrijving:</label></br>
-            <input type="Submit" placeholder="Uploaden" value="fotoUploaden" class="btn btn-primary">
+                <input type="Submit" placeholder="Uploaden" value="fotoUploaden" class="btn btn-primary">
         </div>
 
         <div class="col-md-3">
             <label for="beschrijving">beschrijving:</label>
-            <textarea name="beschrijving" class="form-control" rows="5" id="comment"></textarea>
+                <textarea name="beschrijving" class="form-control" rows="5" id="comment"></textarea>
         </div>
 
         </br>
@@ -81,12 +81,25 @@
     </form>
 
 <?php
-if (isset($_POST["naamDocent"]) && ($_POST["leeftijd"]) && ($_POST["leeftijd"]) && /*($_POST["lesVak"]) && */ ($_POST["opleiding"]) && /*($_POST["favvak"]) && */ ($_POST["beschrijving"])){
-    $sqlDocentToevoegen = "INSERT INTO docenten (docentid, Naam, Opleiding, Beschrijving, Leeftijd, Afbeeldingspad) VALUES (DEFAULT, '".$_POST["naamDocent"]."', '".$_POST["opleiding"]."', '".$_POST["beschrijving"]."', '".$_POST["leeftijd"]."', '')";
+if (isset($_POST["naamDocent"]) && ($_POST["leeftijd"]) && ($_POST["lesVak"]) && ($_POST["opleiding"]) && ($_POST["favvak"]) && ($_POST["beschrijving"])){
 
+    $sql="SELECT Naam FROM docenten WHERE 'Naam'='".$_POST["naamDocent"]."'";
+    $result=mysqli_query($connectie,$sql);
+    $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
+
+    if(mysqli_num_rows($result) == 1)
+    {
+        $msg = "Sorry...This email already exist...";
+    }
+
+    $sqlDocentToevoegen = "INSERT INTO docenten (docentid, Naam, Opleiding, Beschrijving, Leeftijd, Afbeeldingspad) VALUES (DEFAULT, '".$_POST["naamDocent"]."', '".$_POST["opleiding"]."', '".$_POST["beschrijving"]."', '".$_POST["leeftijd"]."', '')";
     mysqli_query($connectie, $sqlDocentToevoegen);
-    //header("Refresh:0");
-    // , $_POST["lesVak"], $_POST["favvak"]
+
+    $sqlDocentOphalen = "SELECT docentid FROM `docenten` WHERE 'Naam'='".$_POST["naamDocent"]."'";
+    $sqliDocentID = mysqli_query($connectie, $sqlDocentOphalen);
+    $row = mysqli_fetch_array($sqliDocentID);
+    //$sqliFavVakInvoegen = "INSERT INTO fav_vak (docentid, vakid) VALUES ($row, '".$_POST["favvak"]."')";
+    //header("Refresh:10");
 }   else {
     echo "Niet alles is ingevuld";
 }
