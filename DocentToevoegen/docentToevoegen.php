@@ -82,27 +82,17 @@
 
 <?php
 if (isset($_POST["naamDocent"]) && ($_POST["leeftijd"]) && ($_POST["lesVak"]) && ($_POST["opleiding"]) && ($_POST["favvak"]) && ($_POST["beschrijving"])){
-
-    $sql="SELECT Naam FROM docenten WHERE 'Naam'='".$_POST["naamDocent"]."'";
-    $result=mysqli_query($connectie,$sql);
-    $row=mysqli_fetch_array($result,MYSQLI_ASSOC);
-
-    if(mysqli_num_rows($result) == 1)
-    {
-        $msg = "Sorry...This email already exist...";
-    }
-
     $sqlDocentToevoegen = "INSERT INTO docenten (docentid, Naam, Opleiding, Beschrijving, Leeftijd, Afbeeldingspad) VALUES (DEFAULT, '".$_POST["naamDocent"]."', '".$_POST["opleiding"]."', '".$_POST["beschrijving"]."', '".$_POST["leeftijd"]."', '')";
     mysqli_query($connectie, $sqlDocentToevoegen);
 
     $sqlDocentOphalen = "SELECT docentid FROM `docenten` WHERE 'Naam'='".$_POST["naamDocent"]."'";
     $sqliDocentID = mysqli_query($connectie, $sqlDocentOphalen);
     $row = mysqli_fetch_array($sqliDocentID);
-    //$sqliFavVakInvoegen = "INSERT INTO fav_vak (docentid, vakid) VALUES ($row, '".$_POST["favvak"]."')";
+    $sqliFavVakInvoegen = "INSERT INTO fav_vak (docentid, vakid) VALUES ($row,'".$_POST["favvak"]."')";
     //header("Refresh:10");
-}   else {
-    echo "Niet alles is ingevuld";
-}
+    }   else {
+    echo "<h4 class='text-center'>Niet alle invulvakken zijn ingevuld</h4>";
+    }
 ?>
 
         <div class="footer navbar-fixed-bottom">
