@@ -1,6 +1,7 @@
 <?php
     //Verbinding maken met de datababase
     include_once("DB.php");
+    include_once ("FotoUp.php");
 ?>
 
 <html lang="en">
@@ -68,7 +69,7 @@
                     ?>
                 </select>
             <label for="FotoUploaden:">Foto uploaden:</label></br>
-                <input type="file" placeholder="Uploaden" value="fotoUploaden" class="btn btn-primary">
+                <input type="file" naam="FotoUp" placeholder="Uploaden" value="fotoUploaden" class="btn btn-primary">
         </div>
 
         <div class="col-md-3">
@@ -81,15 +82,14 @@
     </form>
     <?php
     if (isset($_POST["submit"])){
-        if (isset($_POST["naamDocent"]) && ($_POST["leeftijd"]) && ($_POST["lesVak"]) && ($_POST["opleiding"]) && ($_POST["favvak"]) && ($_POST["beschrijving"])){
-            $sqlDocentToevoegen = "INSERT INTO docenten (docentid, Naam, Opleiding, Beschrijving, Leeftijd, Afbeeldingspad) VALUES (DEFAULT, '".$_POST["naamDocent"]."', '".$_POST["opleiding"]."', '".$_POST["beschrijving"]."', '".$_POST["leeftijd"]."', '')";
+        if (isset($_POST["naamDocent"]) && ($_POST["leeftijd"]) && ($_POST["FotoUp"]) && ($_POST["lesVak"]) && ($_POST["opleiding"]) && ($_POST["favvak"]) && ($_POST["beschrijving"])){
+            $sqlDocentToevoegen = "INSERT INTO docenten (docentid, Naam, Opleiding, Beschrijving, Leeftijd, Afbeeldingspad) VALUES (DEFAULT, '".$_POST["naamDocent"]."', '".$_POST["opleiding"]."', '".$_POST["beschrijving"]."', '".$_POST["leeftijd"]."', '".$_POST["FotoUp"]."')";
             mysqli_query($connectie, $sqlDocentToevoegen);
 
             $sqlDocentOphalen = "SELECT docentid FROM `docenten` WHERE 'Naam'='".$_POST["naamDocent"]."'";
             $sqliDocentID = mysqli_query($connectie, $sqlDocentOphalen);
             $row = mysqli_fetch_array($sqliDocentID);
             $sqliFavVakInvoegen = "INSERT INTO fav_vak (docid, vakid) VALUES ('".$row["docentid"]."', '".$_POST["favvak"]."')";
-            $sqliLesVakInv ="INSERT INTO `lesvak`(`docid`, `vakid`) VALUES ([value-1],[value-2])";
             $sqliLesVakInv = "INSERT INTO lesvak (docid, vakid) VALUES  ('".$row["docentid"]."', '".$_POST["lesVak"]."')";
             if(mysqli_query($connectie, $sqliFavVakInvoegen) /*&& mysqli_query($connectie, $sqliLesVakInv)*/)
             {
