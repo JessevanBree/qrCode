@@ -67,8 +67,8 @@
                     }
                     ?>
                 </select>
-            <label for="Beschrijving">Beschrijving:</label></br>
-                <input type="Submit" placeholder="Uploaden" value="fotoUploaden" class="btn btn-primary">
+            <label for="FotoUploaden:">Foto uploaden:</label></br>
+                <input type="file" placeholder="Uploaden" value="fotoUploaden" class="btn btn-primary">
         </div>
 
         <div class="col-md-3">
@@ -77,23 +77,33 @@
         </div>
 
         </br>
-        <input class="col-md-offset-6 btn btn-default btn-verzend" type="submit" value="submit">
+        <input class="col-md-offset-2  btn-verzend btn btn-default btn-verzend" type="submit" value="submit" name="submit">
     </form>
+    <?php
+    if (isset($_POST["submit"])){
+        if (isset($_POST["naamDocent"]) && ($_POST["leeftijd"]) && ($_POST["lesVak"]) && ($_POST["opleiding"]) && ($_POST["favvak"]) && ($_POST["beschrijving"])){
+            $sqlDocentToevoegen = "INSERT INTO docenten (docentid, Naam, Opleiding, Beschrijving, Leeftijd, Afbeeldingspad) VALUES (DEFAULT, '".$_POST["naamDocent"]."', '".$_POST["opleiding"]."', '".$_POST["beschrijving"]."', '".$_POST["leeftijd"]."', '')";
+            mysqli_query($connectie, $sqlDocentToevoegen);
 
-<?php
-if (isset($_POST["naamDocent"]) && ($_POST["leeftijd"]) && ($_POST["lesVak"]) && ($_POST["opleiding"]) && ($_POST["favvak"]) && ($_POST["beschrijving"])){
-    $sqlDocentToevoegen = "INSERT INTO docenten (docentid, Naam, Opleiding, Beschrijving, Leeftijd, Afbeeldingspad) VALUES (DEFAULT, '".$_POST["naamDocent"]."', '".$_POST["opleiding"]."', '".$_POST["beschrijving"]."', '".$_POST["leeftijd"]."', '')";
-    mysqli_query($connectie, $sqlDocentToevoegen);
-
-    $sqlDocentOphalen = "SELECT docentid FROM `docenten` WHERE 'Naam'='".$_POST["naamDocent"]."'";
-    $sqliDocentID = mysqli_query($connectie, $sqlDocentOphalen);
-    $row = mysqli_fetch_array($sqliDocentID);
-    $sqliFavVakInvoegen = "INSERT INTO fav_vak (docentid, vakid) VALUES ($row,'".$_POST["favvak"]."')";
-    //header("Refresh:10");
-    }   else {
-    echo "<h4 class='text-center'>Niet alle invulvakken zijn ingevuld</h4>";
+            $sqlDocentOphalen = "SELECT docentid FROM `docenten` WHERE 'Naam'='".$_POST["naamDocent"]."'";
+            $sqliDocentID = mysqli_query($connectie, $sqlDocentOphalen);
+            $row = mysqli_fetch_array($sqliDocentID);
+            $sqliFavVakInvoegen = "INSERT INTO fav_vak (docid, vakid) VALUES ('".$row["docentid"]."', '".$_POST["favvak"]."')";
+            $sqliLesVakInv ="INSERT INTO `lesvak`(`docid`, `vakid`) VALUES ([value-1],[value-2])";
+            $sqliLesVakInv = "INSERT INTO lesvak (docid, vakid) VALUES  ('".$row["docentid"]."', '".$_POST["lesVak"]."')";
+            if(mysqli_query($connectie, $sqliFavVakInvoegen) /*&& mysqli_query($connectie, $sqliLesVakInv)*/)
+            {
+                echo "<h4 class='text-center'>er is iets goed gegaan</h4>";
+            }
+            else {
+                echo "<h4 class='text-center'>er is iets fout gegaan</h4>";
+            }
+       }
+        else {
+            echo "<h4 class='text-center'>Niet alle invulvakken zijn ingevuld</h4>";
+        }
     }
-?>
+    ?>
 
         <div class="footer navbar-fixed-bottom">
             Docent informatie 2016.

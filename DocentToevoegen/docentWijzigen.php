@@ -1,6 +1,14 @@
 <?php
     //Verbinding maken met de datababase
     include_once("DB.php");
+
+    //Kijken of waardes numeriek zijn
+    if (is_numeric($_GET['id'])) {
+    //Rond nummer af
+    $id = round($_GET['id']);
+
+    //SQL query's om de gegevens op te halen
+    $sqlAantalDocent = "SELECT `Naam`, `Beschrijving`, `Leeftijd`, `Afbeeldingspad` FROM `docenten`";
 ?>
 
 <html lang="en">
@@ -29,54 +37,25 @@
     </nav>
 
     <form action="" method="post">
-        <div class="col-md-3 col-md-offset-0">
-            <label for="vak">Docent Selecteren:</label>
-                <select class="form-control" name="DocentSelect">
+        <div class="col-md-3 col-md-offset-1">
+            <label for="Naam Docent">Naam Docent:</label>
+                <input type="text" name="naamDocent" placeholder="Naam Docent" class="form-control" value="<?php echo ; ?>">
+            <label for="Leeftijd">Leeftijd:</label>
+                <input type="number" name="leeftijd" placeholder="Leeftijd" class="form-control" min="0" max="99" value="<?php echo isset($_POST['leeftijd']) ? $_POST['leeftijd'] : '' ?>">
+            <label for="vak">Lesvak:</label>
+                <select class="form-control" name="lesVak">
                     <?php
-                    //Maakt een query om de docenten op te halen
-                    $sqliDocenten = "SELECT docentid, Naam FROM docenten";
-                    $sqliDocentenUitkomst = mysqli_query($connectie, $sqliDocenten);
+                    //Maakt een query om de vakken op te halen
+                    $sqliLesVak = "SELECT vakid,vaknaam FROM vakken";
+                    $sqliLesVakUitkomst = mysqli_query($connectie, $sqliLesVak);
 
-                    echo "<option value='0'>Docent</option>";
+                    echo "<option value='0'>Lesvak</option>";
 
-                    while($row = mysqli_fetch_array($sqliDocentenUitkomst)){
-                        echo "<option value='" . $row["docentid"] . "'>" . $row["Naam"] . "</option>";
+                    while($row = mysqli_fetch_array($sqliLesVakUitkomst)){
+                        echo "<option value='" . $row["vakid"] . "'>" . $row["vaknaam"] . "</option>";
                     }
                     ?>
                 </select>
-        </div>
-        <input class=" btn btn-default btn-verzend" style="margin-top:30px " type="submit" value="submit"></br>
-    </form>
-
-    <form action="" method="post">
-        <div class="col-md-3 col-md-offset-1">
-            <label for="Naam Docent">Naam Docent:</label>
-            <input type="text" name="naamDocent" placeholder="Naam Docent" class="form-control" value="<?php echo isset($_POST['naamDocent']) ? $_POST['naamDocent'] : '' ?>">
-            <label for="Leeftijd">Leeftijd:</label>
-            <input type="number" name="leeftijd" placeholder="Leeftijd" class="form-control" min="0" max="99" value="<?php echo isset($_POST['leeftijd']) ? $_POST['leeftijd'] : '' ?>">
-            <!-- zorgt ervoor dat alleen nummers ingevoerd kunnen worden-->
-            <script>
-                function isNumberKey(evt){
-                    var charCode = (evt.which) ? evt.which : event.keyCode
-                    if (charCode > 31 && (charCode < 48 || charCode > 57))
-                    return false;
-                    return true;
-                }
-            </script>
-            <label for="vak">Lesvak:</label>
-            <select class="form-control" name="lesVak">
-                <?php
-                //Maakt een query om de vakken op te halen
-                $sqliLesVak = "SELECT vakid,vaknaam FROM vakken";
-                $sqliLesVakUitkomst = mysqli_query($connectie, $sqliLesVak);
-
-                echo "<option value='0'>Lesvak</option>";
-
-                while($row = mysqli_fetch_array($sqliLesVakUitkomst)){
-                    echo "<option value='" . $row["vakid"] . "'>" . $row["vaknaam"] . "</option>";
-                }
-                ?>
-            </select>
         </div>
 
         <div class="col-md-3">

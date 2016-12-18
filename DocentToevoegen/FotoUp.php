@@ -1,11 +1,3 @@
-
-<form action="" method="post" enctype="multipart/form-data">
-	<input type="file" name="bestand" id="bestand">
-	<input type="submit" name="submit">
-</form>
-
-
-
 <?php
 	$_SESSION["user"] = "paul";
 	//controleerd of de post is gebeurt.
@@ -38,20 +30,9 @@
 			imagejpeg($img_resized, $gebruikers_map.$bestandnaam);
 		}
 		else{
-			echo"het is geen plaatje"; 
+			echo"Dit is geen afbeelding";
 		}
 	}
-	echo "<br>";
-	echo "<br>";
-	echo "<br>";
-	echo "<br>";
-
-	echo"<div style='height:50px;width:50px;'>
-			<img src='Docenten/".$_SESSION["user"]."/profile_picture.jpg' style='height:500px;width:500px;' >
-		</div>";
-
-		
-
 ?>
 
 
