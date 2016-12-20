@@ -11,12 +11,15 @@ body{
 }
 
 form {
-    Padding-top: 50px;
+    Padding-top: 5%;
 }
 
 h1{
     font-weight: 300%;
     font-size: 400%;
+}
+
+.error{
 }
 
 .navbarcolor{
@@ -61,4 +64,14 @@ label {
 textarea {
     resize: none;
 
+}
+
+.btn-style{
+    background-color: #115f5d;
+    color: #fff;
+}
+
+.btn-style:hover{
+    color: #fff;
+    background-color:#00aa8e;
 }
