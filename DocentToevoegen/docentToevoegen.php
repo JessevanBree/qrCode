@@ -15,7 +15,7 @@
 
         <!-- Bootstrap core CSS -->
         <link href="Bootstrap/css/bootstrap.css" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
+        <link href="style3.css" rel="stylesheet">
     </head>
 
     <body>

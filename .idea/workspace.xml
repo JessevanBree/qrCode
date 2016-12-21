@@ -33,62 +33,107 @@
     <favorites_list name="qrCode" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="docentToevoegen.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DocentToevoegen/docentToevoegen.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="92" column="113" selection-start-line="92" selection-start-column="113" selection-end-line="92" selection-end-column="113" />
-              <folding>
-                <marker date="1482232215762" expanded="true" signature="1813:1845" ph="SELECT vakid... vakken" />
-                <marker date="1482232215762" expanded="true" signature="2019:2081" ph="SELECT vakna... vakken" />
-                <marker date="1482232215762" expanded="true" signature="2794:2977" ph="..." />
-                <marker date="1482232215762" expanded="true" signature="3145:4203" ph="..." />
-                <marker date="1482232215762" expanded="true" signature="3287:3319" ph="SELECT vakid... vakken" />
-                <marker date="1482232215762" expanded="true" signature="3493:3555" ph="SELECT vakna... vakken" />
-                <marker date="1482232215762" expanded="true" signature="4458:4634" ph="..." />
-                <marker date="1482232215762" expanded="true" signature="5312:5527" ph="INSERT INTO docenten... " />
-                <marker date="1482232215762" expanded="true" signature="5312:5554" ph="INSERT INTO docenten... " />
-                <marker date="1482232215762" expanded="true" signature="5666:5733" ph="SELECT docen... docenten" />
-                <marker date="1482232215762" expanded="true" signature="5920:6010" ph="INSERT INTO fav_vak... " />
-                <marker date="1482232215762" expanded="true" signature="6051:6141" ph="INSERT INTO lesvak... " />
-                <marker date="1482232215762" expanded="true" signature="6770:6924" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DocentToevoegen/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FotoUp.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DocentToevoegen/FotoUp.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DB.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DocentToevoegen/DB.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.7725">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="docentWijzigen.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/DocentToevoegen/docentWijzigen.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="222">
+                  <caret line="81" column="28" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+                  <folding>
+                    <marker date="1482331537540" expanded="true" signature="276:374" ph="SELECT Naam,... docenten" />
+                    <marker date="1482331537540" expanded="true" signature="838:951" ph="SELECT vakke... vakken" />
+                    <marker date="1482331537540" expanded="true" signature="1093:1203" ph="SELECT vakke... vakken" />
+                    <marker date="1482331537540" expanded="true" signature="3150:3182" ph="SELECT vakid... vakken" />
+                    <marker date="1482331537540" expanded="true" signature="4210:4242" ph="SELECT vakid... vakken" />
+                    <marker date="1482331537540" expanded="true" signature="5922:5976" ph="ALTER TABLE docenten... " />
+                    <marker date="1482331537540" expanded="true" signature="6021:6236" ph="INSERT INTO docenten... " />
+                    <marker date="1482331537540" expanded="true" signature="6236:6265" ph="/*, '${$_POS... " />
+                    <marker date="1482331537540" expanded="true" signature="6375:6442" ph="SELECT docen... docenten" />
+                    <marker date="1482331537540" expanded="true" signature="6629:6719" ph="INSERT INTO fav_vak... " />
+                    <marker date="1482331537540" expanded="true" signature="6760:6850" ph="INSERT INTO lesvak... " />
+                    <marker date="1482331537540" expanded="true" signature="7596:7613" ph="..." />
+                    <marker date="1482331537540" expanded="true" signature="7691:7764" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="FotoUp.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DocentToevoegen/FotoUp.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DB.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DocentToevoegen/DB.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DocentToevoegen/style.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1887">
+                  <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="docentToevoegen.php" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/DocentToevoegen/docentToevoegen.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="562">
+                  <caret line="139" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="139" selection-end-column="7" />
+                  <folding>
+                    <marker date="1482245254384" expanded="true" signature="1814:1846" ph="SELECT vakid... vakken" />
+                    <marker date="1482245254384" expanded="true" signature="2020:2082" ph="SELECT vakna... vakken" />
+                    <marker date="1482245254384" expanded="true" signature="2795:2978" ph="..." />
+                    <marker date="1482245254384" expanded="true" signature="3146:4204" ph="..." />
+                    <marker date="1482245254384" expanded="true" signature="3288:3320" ph="SELECT vakid... vakken" />
+                    <marker date="1482245254384" expanded="true" signature="3494:3556" ph="SELECT vakna... vakken" />
+                    <marker date="1482245254384" expanded="true" signature="5313:5528" ph="INSERT INTO docenten... " />
+                    <marker date="1482245254384" expanded="true" signature="5313:5555" ph="INSERT INTO docenten... " />
+                    <marker date="1482245254384" expanded="true" signature="5667:5734" ph="SELECT docen... docenten" />
+                    <marker date="1482245254384" expanded="true" signature="5921:6011" ph="INSERT INTO fav_vak... " />
+                    <marker date="1482245254384" expanded="true" signature="6052:6142" ph="INSERT INTO lesvak... " />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="docent.php" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DocentToevoegen/docent.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="697">
+                  <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+                  <folding>
+                    <marker date="1482245909658" expanded="true" signature="259:357" ph="SELECT Naam,... docenten" />
+                    <marker date="1482245909658" expanded="true" signature="771:870" ph="SELECT vakna... vakken" />
+                    <marker date="1482245909658" expanded="true" signature="1377:1533" ph="..." />
+                    <marker date="1482245909658" expanded="true" signature="3235:3330" ph="SELECT vakna... vakken" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -114,6 +159,8 @@
         <option value="$PROJECT_DIR$/DocentToevoegen/FotoUp.php" />
         <option value="$PROJECT_DIR$/DocentToevoegen/style.css" />
         <option value="$PROJECT_DIR$/DocentToevoegen/docentToevoegen.php" />
+        <option value="$PROJECT_DIR$/DocentToevoegen/docent.php" />
+        <option value="$PROJECT_DIR$/DocentToevoegen/docentWijzigen.php" />
       </list>
     </option>
   </component>
@@ -155,32 +202,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qr code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qr code" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qr code" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DocentToevoegen" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -251,37 +277,60 @@
       <updated>1481827375158</updated>
       <workItem from="1481827376251" duration="10352000" />
       <workItem from="1482156711566" duration="4068000" />
-      <workItem from="1482219741564" duration="10024000" />
+      <workItem from="1482219741564" duration="10176000" />
+      <workItem from="1482242458722" duration="3961000" />
+      <workItem from="1482322437450" duration="6683000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24444000" />
+    <option name="totallyTimeSpent" value="35240000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.338125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.50208336" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25052083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893" sideWeight="0.50208336" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.338125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25052083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -311,24 +360,145 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/DocentToevoegen/docentWijzigen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="146" selection-start-line="70" selection-start-column="146" selection-end-line="70" selection-end-column="146" />
+          <folding>
+            <marker date="1482331537540" expanded="true" signature="276:374" ph="SELECT Naam,... docenten" />
+            <marker date="1482331537540" expanded="true" signature="838:951" ph="SELECT vakke... vakken" />
+            <marker date="1482331537540" expanded="true" signature="1093:1203" ph="SELECT vakke... vakken" />
+            <marker date="1482331537540" expanded="true" signature="3150:3182" ph="SELECT vakid... vakken" />
+            <marker date="1482331537540" expanded="true" signature="4210:4242" ph="SELECT vakid... vakken" />
+            <marker date="1482331537540" expanded="true" signature="5922:5976" ph="ALTER TABLE docenten... " />
+            <marker date="1482331537540" expanded="true" signature="6021:6236" ph="INSERT INTO docenten... " />
+            <marker date="1482331537540" expanded="true" signature="6236:6265" ph="/*, '${$_POS... " />
+            <marker date="1482331537540" expanded="true" signature="6375:6442" ph="SELECT docen... docenten" />
+            <marker date="1482331537540" expanded="true" signature="6629:6719" ph="INSERT INTO fav_vak... " />
+            <marker date="1482331537540" expanded="true" signature="6760:6850" ph="INSERT INTO lesvak... " />
+            <marker date="1482331537540" expanded="true" signature="7596:7613" ph="..." />
+            <marker date="1482331537540" expanded="true" signature="7691:7764" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocentToevoegen/FotoUp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocentToevoegen/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocentToevoegen/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1887">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocentToevoegen/docentToevoegen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding>
+            <marker date="1482245254384" expanded="true" signature="1814:1846" ph="SELECT vakid... vakken" />
+            <marker date="1482245254384" expanded="true" signature="2020:2082" ph="SELECT vakna... vakken" />
+            <marker date="1482245254384" expanded="true" signature="2795:2978" ph="..." />
+            <marker date="1482245254384" expanded="true" signature="3146:4204" ph="..." />
+            <marker date="1482245254384" expanded="true" signature="3288:3320" ph="SELECT vakid... vakken" />
+            <marker date="1482245254384" expanded="true" signature="3494:3556" ph="SELECT vakna... vakken" />
+            <marker date="1482245254384" expanded="true" signature="5313:5528" ph="INSERT INTO docenten... " />
+            <marker date="1482245254384" expanded="true" signature="5313:5555" ph="INSERT INTO docenten... " />
+            <marker date="1482245254384" expanded="true" signature="5667:5734" ph="SELECT docen... docenten" />
+            <marker date="1482245254384" expanded="true" signature="5921:6011" ph="INSERT INTO fav_vak... " />
+            <marker date="1482245254384" expanded="true" signature="6052:6142" ph="INSERT INTO lesvak... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocentToevoegen/docent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1482245909658" expanded="true" signature="259:357" ph="SELECT Naam,... docenten" />
+            <marker date="1482245909658" expanded="true" signature="771:870" ph="SELECT vakna... vakken" />
+            <marker date="1482245909658" expanded="true" signature="1377:1533" ph="..." />
+            <marker date="1482245909658" expanded="true" signature="3235:3330" ph="SELECT vakna... vakken" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DocentToevoegen/docentToevoegen.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1482232215762" expanded="true" signature="1813:1845" ph="SELECT vakid... vakken" />
-            <marker date="1482232215762" expanded="true" signature="2019:2081" ph="SELECT vakna... vakken" />
-            <marker date="1482232215762" expanded="true" signature="2794:2977" ph="..." />
-            <marker date="1482232215762" expanded="true" signature="3145:4203" ph="..." />
-            <marker date="1482232215762" expanded="true" signature="3287:3319" ph="SELECT vakid... vakken" />
-            <marker date="1482232215762" expanded="true" signature="3493:3555" ph="SELECT vakna... vakken" />
-            <marker date="1482232215762" expanded="true" signature="4458:4634" ph="..." />
-            <marker date="1482232215762" expanded="true" signature="5312:5527" ph="INSERT INTO docenten... " />
-            <marker date="1482232215762" expanded="true" signature="5312:5554" ph="INSERT INTO docenten... " />
-            <marker date="1482232215762" expanded="true" signature="5666:5733" ph="SELECT docen... docenten" />
-            <marker date="1482232215762" expanded="true" signature="5920:6010" ph="INSERT INTO fav_vak... " />
-            <marker date="1482232215762" expanded="true" signature="6051:6141" ph="INSERT INTO lesvak... " />
-            <marker date="1482232215762" expanded="true" signature="6770:6924" ph="..." />
+            <marker date="1482245254384" expanded="true" signature="1814:1846" ph="SELECT vakid... vakken" />
+            <marker date="1482245254384" expanded="true" signature="2020:2082" ph="SELECT vakna... vakken" />
+            <marker date="1482245254384" expanded="true" signature="2795:2978" ph="..." />
+            <marker date="1482245254384" expanded="true" signature="3146:4204" ph="..." />
+            <marker date="1482245254384" expanded="true" signature="3288:3320" ph="SELECT vakid... vakken" />
+            <marker date="1482245254384" expanded="true" signature="3494:3556" ph="SELECT vakna... vakken" />
+            <marker date="1482245254384" expanded="true" signature="5313:5528" ph="INSERT INTO docenten... " />
+            <marker date="1482245254384" expanded="true" signature="5313:5555" ph="INSERT INTO docenten... " />
+            <marker date="1482245254384" expanded="true" signature="5667:5734" ph="SELECT docen... docenten" />
+            <marker date="1482245254384" expanded="true" signature="5921:6011" ph="INSERT INTO fav_vak... " />
+            <marker date="1482245254384" expanded="true" signature="6052:6142" ph="INSERT INTO lesvak... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocentToevoegen/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocentToevoegen/FotoUp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocentToevoegen/DB.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocentToevoegen/docentToevoegen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1482245254384" expanded="true" signature="1814:1846" ph="SELECT vakid... vakken" />
+            <marker date="1482245254384" expanded="true" signature="2020:2082" ph="SELECT vakna... vakken" />
+            <marker date="1482245254384" expanded="true" signature="2795:2978" ph="..." />
+            <marker date="1482245254384" expanded="true" signature="3146:4204" ph="..." />
+            <marker date="1482245254384" expanded="true" signature="3288:3320" ph="SELECT vakid... vakken" />
+            <marker date="1482245254384" expanded="true" signature="3494:3556" ph="SELECT vakna... vakken" />
+            <marker date="1482245254384" expanded="true" signature="5313:5528" ph="INSERT INTO docenten... " />
+            <marker date="1482245254384" expanded="true" signature="5313:5555" ph="INSERT INTO docenten... " />
+            <marker date="1482245254384" expanded="true" signature="5667:5734" ph="SELECT docen... docenten" />
+            <marker date="1482245254384" expanded="true" signature="5921:6011" ph="INSERT INTO fav_vak... " />
+            <marker date="1482245254384" expanded="true" signature="6052:6142" ph="INSERT INTO lesvak... " />
           </folding>
         </state>
       </provider>
@@ -354,19 +524,17 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1482232215762" expanded="true" signature="1813:1845" ph="SELECT vakid... vakken" />
-            <marker date="1482232215762" expanded="true" signature="2019:2081" ph="SELECT vakna... vakken" />
-            <marker date="1482232215762" expanded="true" signature="2794:2977" ph="..." />
-            <marker date="1482232215762" expanded="true" signature="3145:4203" ph="..." />
-            <marker date="1482232215762" expanded="true" signature="3287:3319" ph="SELECT vakid... vakken" />
-            <marker date="1482232215762" expanded="true" signature="3493:3555" ph="SELECT vakna... vakken" />
-            <marker date="1482232215762" expanded="true" signature="4458:4634" ph="..." />
-            <marker date="1482232215762" expanded="true" signature="5312:5527" ph="INSERT INTO docenten... " />
-            <marker date="1482232215762" expanded="true" signature="5312:5554" ph="INSERT INTO docenten... " />
-            <marker date="1482232215762" expanded="true" signature="5666:5733" ph="SELECT docen... docenten" />
-            <marker date="1482232215762" expanded="true" signature="5920:6010" ph="INSERT INTO fav_vak... " />
-            <marker date="1482232215762" expanded="true" signature="6051:6141" ph="INSERT INTO lesvak... " />
-            <marker date="1482232215762" expanded="true" signature="6770:6924" ph="..." />
+            <marker date="1482245254384" expanded="true" signature="1814:1846" ph="SELECT vakid... vakken" />
+            <marker date="1482245254384" expanded="true" signature="2020:2082" ph="SELECT vakna... vakken" />
+            <marker date="1482245254384" expanded="true" signature="2795:2978" ph="..." />
+            <marker date="1482245254384" expanded="true" signature="3146:4204" ph="..." />
+            <marker date="1482245254384" expanded="true" signature="3288:3320" ph="SELECT vakid... vakken" />
+            <marker date="1482245254384" expanded="true" signature="3494:3556" ph="SELECT vakna... vakken" />
+            <marker date="1482245254384" expanded="true" signature="5313:5528" ph="INSERT INTO docenten... " />
+            <marker date="1482245254384" expanded="true" signature="5313:5555" ph="INSERT INTO docenten... " />
+            <marker date="1482245254384" expanded="true" signature="5667:5734" ph="SELECT docen... docenten" />
+            <marker date="1482245254384" expanded="true" signature="5921:6011" ph="INSERT INTO fav_vak... " />
+            <marker date="1482245254384" expanded="true" signature="6052:6142" ph="INSERT INTO lesvak... " />
           </folding>
         </state>
       </provider>
@@ -439,30 +607,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DocentToevoegen/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="10" />
+        <state relative-caret-position="1887">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../DocentPagina/Docent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1818">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocentToevoegen/docent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+          <folding>
+            <marker date="1482245909658" expanded="true" signature="259:357" ph="SELECT Naam,... docenten" />
+            <marker date="1482245909658" expanded="true" signature="771:870" ph="SELECT vakna... vakken" />
+            <marker date="1482245909658" expanded="true" signature="1377:1533" ph="..." />
+            <marker date="1482245909658" expanded="true" signature="3235:3330" ph="SELECT vakna... vakken" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/DocentToevoegen/docentToevoegen.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="92" column="113" selection-start-line="92" selection-start-column="113" selection-end-line="92" selection-end-column="113" />
+        <state relative-caret-position="562">
+          <caret line="139" column="7" selection-start-line="0" selection-start-column="0" selection-end-line="139" selection-end-column="7" />
           <folding>
-            <marker date="1482232215762" expanded="true" signature="1813:1845" ph="SELECT vakid... vakken" />
-            <marker date="1482232215762" expanded="true" signature="2019:2081" ph="SELECT vakna... vakken" />
-            <marker date="1482232215762" expanded="true" signature="2794:2977" ph="..." />
-            <marker date="1482232215762" expanded="true" signature="3145:4203" ph="..." />
-            <marker date="1482232215762" expanded="true" signature="3287:3319" ph="SELECT vakid... vakken" />
-            <marker date="1482232215762" expanded="true" signature="3493:3555" ph="SELECT vakna... vakken" />
-            <marker date="1482232215762" expanded="true" signature="4458:4634" ph="..." />
-            <marker date="1482232215762" expanded="true" signature="5312:5527" ph="INSERT INTO docenten... " />
-            <marker date="1482232215762" expanded="true" signature="5312:5554" ph="INSERT INTO docenten... " />
-            <marker date="1482232215762" expanded="true" signature="5666:5733" ph="SELECT docen... docenten" />
-            <marker date="1482232215762" expanded="true" signature="5920:6010" ph="INSERT INTO fav_vak... " />
-            <marker date="1482232215762" expanded="true" signature="6051:6141" ph="INSERT INTO lesvak... " />
-            <marker date="1482232215762" expanded="true" signature="6770:6924" ph="..." />
+            <marker date="1482245254384" expanded="true" signature="1814:1846" ph="SELECT vakid... vakken" />
+            <marker date="1482245254384" expanded="true" signature="2020:2082" ph="SELECT vakna... vakken" />
+            <marker date="1482245254384" expanded="true" signature="2795:2978" ph="..." />
+            <marker date="1482245254384" expanded="true" signature="3146:4204" ph="..." />
+            <marker date="1482245254384" expanded="true" signature="3288:3320" ph="SELECT vakid... vakken" />
+            <marker date="1482245254384" expanded="true" signature="3494:3556" ph="SELECT vakna... vakken" />
+            <marker date="1482245254384" expanded="true" signature="5313:5528" ph="INSERT INTO docenten... " />
+            <marker date="1482245254384" expanded="true" signature="5313:5555" ph="INSERT INTO docenten... " />
+            <marker date="1482245254384" expanded="true" signature="5667:5734" ph="SELECT docen... docenten" />
+            <marker date="1482245254384" expanded="true" signature="5921:6011" ph="INSERT INTO fav_vak... " />
+            <marker date="1482245254384" expanded="true" signature="6052:6142" ph="INSERT INTO lesvak... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DocentToevoegen/docentWijzigen.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="81" column="28" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+          <folding>
+            <marker date="1482331537540" expanded="true" signature="276:374" ph="SELECT Naam,... docenten" />
+            <marker date="1482331537540" expanded="true" signature="838:951" ph="SELECT vakke... vakken" />
+            <marker date="1482331537540" expanded="true" signature="1093:1203" ph="SELECT vakke... vakken" />
+            <marker date="1482331537540" expanded="true" signature="3150:3182" ph="SELECT vakid... vakken" />
+            <marker date="1482331537540" expanded="true" signature="4210:4242" ph="SELECT vakid... vakken" />
+            <marker date="1482331537540" expanded="true" signature="5922:5976" ph="ALTER TABLE docenten... " />
+            <marker date="1482331537540" expanded="true" signature="6021:6236" ph="INSERT INTO docenten... " />
+            <marker date="1482331537540" expanded="true" signature="6236:6265" ph="/*, '${$_POS... " />
+            <marker date="1482331537540" expanded="true" signature="6375:6442" ph="SELECT docen... docenten" />
+            <marker date="1482331537540" expanded="true" signature="6629:6719" ph="INSERT INTO fav_vak... " />
+            <marker date="1482331537540" expanded="true" signature="6760:6850" ph="INSERT INTO lesvak... " />
+            <marker date="1482331537540" expanded="true" signature="7596:7613" ph="..." />
+            <marker date="1482331537540" expanded="true" signature="7691:7764" ph="..." />
           </folding>
         </state>
       </provider>
