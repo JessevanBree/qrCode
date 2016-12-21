@@ -27,7 +27,7 @@ if(is_numeric($_GET['id'])) {
 
         //haalt het Les vak op
         $sqli_Les_Vak = "SELECT vakken.vakid, vaknaam FROM vakken JOIN lesvak ON vakken.vakid = lesvak.vakid WHERE lesvak.docid = '$id'";
-        $row_Les_Vak = mysqli_fetch_array(mysqli_query($connect, $sqli_fav_vak));
+        $row_Les_Vak = mysqli_fetch_array(mysqli_query($connect, $sqli_Les_Vak));
     }
     else{
         header("location: DocentWijzigen.php?id=1");
@@ -106,7 +106,7 @@ else{
                             }
                         ?>
                     </select>
-                <label for="FotoUploaden:">Foto uploaden:</label></br>
+                <label for="FotoUploaden:">Foto uploaden:</label><br>
                     <input type="file" naam="FotoUp" placeholder="Uploaden" value="fotoUploaden" class="btn btn-style">
             </div>
 
@@ -115,9 +115,9 @@ else{
                 <textarea name="beschrijving" class="form-control" rows="5" id="comment" placeholder="<?php echo $Beschrijving; ?>"><?php echo $Beschrijving; ?></textarea>
             </div>
 
-            </br>
+            <br>
             <div class="col-md-offset-4 col-md-3">
-                <input class="col-md-offset-2 col-md-8 btn-verzend btn btn-default btn-verzend" type="submit" value="submit" name="submit"></br></br>
+                <input class="col-md-offset-2 col-md-8 btn-verzend btn btn-default btn-verzend" type="submit" value="submit" name="submit"><br><br>
         </form>
         <!-- Einde Formulier-->
 
@@ -125,18 +125,20 @@ else{
         <?php
             if (isset($_POST["submit"])){
                 if (isset($_POST["naamDocent"]) && ($_POST["leeftijd"]) && /*($_POST["FotoUp"]) &&*/ ($_POST["lesVak"]) && ($_POST["opleiding"]) && ($_POST["favvak"]) && ($_POST["beschrijving"])){
-                    //$sqlDocentAanpassen = "ALTER TABLE docenten ALTER COLUMN column_name datatype"
-                    $sqlDocentToevoegen = "INSERT INTO docenten (docentid, Naam, Opleiding, Beschrijving, Leeftijd, Afbeeldingspad) VALUES (DEFAULT, '".$_POST["naamDocent"]."', '".$_POST["opleiding"]."', '".$_POST["beschrijving"]."', '".$_POST["leeftijd"]."'/*, '".$_POST["FotoUp"]."')*/";
-                    mysqli_query($connect, $sqlDocentAanpassen);
+                    $sqlDocentAanpassen = "UPDATE docenten SET Naam='".$_POST["naamDocent"]."', Opleiding='".$_POST["opleiding"]."', Beschrijving='".$_POST["beschrijving"]."', Leeftijd='".$_POST["leeftijd"]."', Afbeeldingspad='' WHERE docentid ='$id'";
+                    //$sqlDocentToevoegen = "INSERT INTO docenten (docentid, Naam, Opleiding, Beschrijving, Leeftijd, Afbeeldingspad) VALUES (DEFAULT, '".$_POST["naamDocent"]."', '".$_POST["opleiding"]."', '".$_POST["beschrijving"]."', '".$_POST["leeftijd"]."'/*, '".$_POST["FotoUp"]."')*/";
+                     mysqli_query($connect, $sqlDocentAanpassen);
 
                     $sqlDocentOphalen = "SELECT docentid FROM docenten WHERE Naam='".$_POST["naamDocent"]."'";
                     $sqliDocentID = mysqli_query($connect, $sqlDocentOphalen);
                     $row = mysqli_fetch_array($sqliDocentID);
-                    $sqliFavVakInvoegen = "INSERT INTO fav_vak (docid, vakid) VALUES ('".$row["docentid"]."', '".$_POST["favvak"]."')";
-                    $sqliLesVakInv = "INSERT INTO lesvak (docid, vakid) VALUES  ('".$row["docentid"]."', '".$_POST["lesVak"]."')";
-                    if(mysqli_query($connect, $sqliFavVakInvoegen) && mysqli_query($connect, $sqliLesVakInv))
+
+                    $sqliFavVakAanpassen = "UPDATE fav_vak SET docid='".$row["docentid"]."',vakid='".$_POST["favvak"]."'";
+                    $sqliLesVakAanpassen = "UPDATE lesvak SET docid='".$row["docentid"]."',vakid='".$_POST["lesVak"]."'";
+                    if(mysqli_query($connect, $sqliFavVakAanpassen) && mysqli_query($connect, $sqliLesVakAanpassen))
                     {
-                        echo "<h4 class='text-center error'>er is iets goed gegaan</h4>";
+                        //HEADER("Refresh:0");
+                        echo "<h4 class='text-center error'>De docent is gewijzigd</h4>";
                     }
                     else
                     {
@@ -149,7 +151,7 @@ else{
                 }
             }
         ?>
-        </div>
+            </div>
 
             <!-- Begin Footer -->
             <div class="footer navbar-fixed-bottom">
